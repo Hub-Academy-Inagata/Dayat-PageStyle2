@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './component/Navbar';
+import { Routes, Route } from 'react-router-dom';
+import Beranda from './pages/Beranda';
+import Tentang from './pages/Tentang';
+import Galeri from './pages/Galeri';
+import Artikel from './pages/Artikel';
+import Kontak from './pages/Kontak';
+import Footer from './component/Footer';
+import Post from './component/Post';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Beranda />} />
+        <Route path='/tentang-kita' element={<Tentang />} />
+        <Route path='/galeri' element={<Galeri />} />
+        <Route path='/artikel' element={<Artikel />} />
+        <Route path='/artikel/1' element={<Post />} />
+        <Route path='/kontak' element={<Kontak />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

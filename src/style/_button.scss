@@ -1,0 +1,37 @@
+//Button
+.btn {
+  padding: 11px 32px;
+  font-weight: 600;
+
+  &-secondary {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+
+    &:focus {
+      background-color: #9b309d;
+      border-color: #9b309d;
+    }
+    &:hover {
+      background-color: #fff;
+      border-color: #9b309d;
+      color: #9b309d;
+    }
+  }
+  &-primary {
+    color: #ffffff;
+    background-color: #ae39ff;
+    border-color: #ae39ff;
+
+    &:focus {
+      background-color: #ae39ff;
+      border-color: #ae39ff;
+    }
+    &:hover {
+      background-color: #fff;
+      border-color: #ae39ff;
+      color: #ae39ff;
+    }
+  }
+}
+//Button

@@ -1,0 +1,118 @@
+// HERO
+.hero-kontak {
+  background-image: url("../img/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  height: 100vh;
+  //   background-size: 44.9vw;
+
+  .row {
+    min-height: calc(100vh - 116px);
+  }
+  .hero-row {
+    background-image: url("../img/hero-kontak.svg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: center;
+    background-size: 40.9vw;
+  }
+  h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+}
+// HERO
+
+//KONTAK FORM
+.kontak-form {
+  margin-top: 100px;
+  align-items: center;
+  h1 {
+    font-weight: 700;
+    color: #19245f;
+    text-align: center;
+  }
+  p {
+    color: #4facf6;
+    text-align: center;
+  }
+
+  .col {
+    margin-top: 30px;
+    .contact-item {
+      margin-top: 30px;
+      align-items: center;
+      p {
+        margin: 5px;
+        text-align: start;
+        color: #2e334e;
+        font-weight: 600;
+      }
+      img {
+        margin-right: 20px;
+        width: 60px;
+      }
+    }
+
+    form {
+      align-items: center;
+      margin-top: 30px;
+      textarea {
+        height: 128px;
+      }
+      .btn-primary {
+        width: 100%;
+      }
+    }
+  }
+}
+//KONTAK FORM
+
+@media (max-width: 768px) {
+  .hero-kontak {
+    padding-top: 103px;
+
+    img {
+      width: 100%;
+    }
+
+    h1 {
+      font-weight: 700;
+      margin-top: 30px;
+    }
+
+    p {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-kontak {
+    padding-top: 80px;
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+    }
+    img {
+      width: 90vw;
+    }
+
+    .hero-row {
+      background-image: none !important;
+      align-content: space-evenly;
+    }
+  }
+}

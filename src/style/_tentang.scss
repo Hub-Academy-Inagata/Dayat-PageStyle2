@@ -1,0 +1,285 @@
+// HERO
+.hero-tentang {
+  background-image: url("../img/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  height: 100vh;
+  //   background-size: 44.9vw;
+
+  .row {
+    min-height: calc(100vh - 116px);
+  }
+  .hero-row {
+    background-image: url("../img/hero-tentang.svg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: center;
+    background-size: 40.9vw;
+  }
+  h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+}
+// HERO
+
+//TENTANG-SECTION
+.tentang-section {
+  margin-top: 100px;
+  text-align: justify;
+  h6 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4facf6;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #19245f;
+  }
+}
+//TENTANG-SECTION
+
+// KEUNGGULAN
+.keunggulan-tentang {
+  margin-top: 100px;
+  justify-content: center;
+  width: 100%;
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #19245f;
+  }
+
+  p {
+    font-size: 18px;
+    color: #ae39ff;
+    text-align: center;
+  }
+
+  &-vector {
+    position: absolute;
+    width: 585.63px;
+    height: 649.87px;
+    left: 1197.39px;
+    top: 1328.68px;
+  }
+
+  .keunggulan-col {
+    text-align: start;
+
+    .icon {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 30px;
+      img {
+        width: 60px;
+      }
+    }
+
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #2e334e;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #a3a6a6;
+      text-align: justify;
+    }
+  }
+}
+// KEUNGGULAN
+
+//STAFF
+.staf-tentang {
+  margin-top: 100px;
+  padding: 50px 0;
+  background: rgba(233, 239, 255, 0.8);
+  h1 {
+    font-weight: 700;
+    color: #19245f;
+  }
+
+  p {
+    color: #ae39ff;
+    font-size: 18px;
+  }
+
+  .dokumentasi {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .all-link {
+      background: #f2b828;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 8px;
+      &:hover {
+        color: #f2b828;
+        background: #fff;
+        border-color: #f2b828;
+        transition: all ease-in-out;
+      }
+    }
+  }
+  .row {
+    justify-content: space-between;
+    text-align: center;
+    .col {
+      width: auto;
+      padding: 10px 0;
+      h5 {
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+        color: #19245f;
+        font-weight: 400;
+      }
+      img {
+        width: 200px;
+        &:hover {
+          transform: scale(1.05);
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+//STAFF
+
+//VIDEO
+.video-tentang {
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  p {
+    color: #4facf6;
+    font-size: 18px;
+  }
+  h1 {
+    font-weight: 700;
+    color: #19245f;
+    margin-bottom: 30px;
+  }
+  .video-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+//VIDEO
+
+@media (max-width: 768px) {
+  .hero-tentang {
+    padding-top: 103px;
+
+    img {
+      width: 100%;
+    }
+
+    h1 {
+      font-weight: 700;
+      margin-top: 30px;
+    }
+
+    p {
+      margin-top: 30px;
+    }
+  }
+  .keunggulan-tentang {
+    h1 {
+      font-size: 32px;
+    }
+    .keunggulan-col {
+      .icon,
+      h4 {
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .staf-tentang {
+    .row {
+      justify-content: space-around;
+      .col {
+        display: grid;
+        justify-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-tentang {
+    padding-top: 80px;
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+    }
+    img {
+      width: 90vw;
+    }
+
+    .hero-row {
+      background-image: none !important;
+      align-content: space-evenly;
+    }
+  }
+
+  .tentang-section {
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  .staf-tentang {
+    h1 {
+      width: 50%;
+    }
+    .dokumentasi {
+      width: 100%;
+      span {
+        align-self: center;
+      }
+      .all-link {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
+
+    .row {
+      .col {
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
